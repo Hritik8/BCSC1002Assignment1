@@ -17,4 +17,8 @@ public class Library {
     public void setBooksAvailable(Book[] booksAvailable) {
         this.booksAvailable = booksAvailable;
     }
+
+    public Library(Book[] booksAvailable) {
+        this.booksAvailable = booksAvailable;
+    }
 }
