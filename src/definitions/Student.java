@@ -62,4 +62,19 @@ public class Student {
     public void setBooksIssued(Book[] booksIssued) {
         this.booksIssued = booksIssued;
     }
+    //Constructor
+    public Student(String firstName,String middleName,String lastName) {
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
+    }
+    public Student(long universityRollNumber) {
+        this.universityRollNumber = universityRollNumber;
+    }
+    public Student(int numberOfBooksIssued) {
+        this.numberOfBooksIssued = numberOfBooksIssued;
+    }
+    public Student(Book[] booksIssued) {
+        this.booksIssued = booksIssued;
+    }
 }
