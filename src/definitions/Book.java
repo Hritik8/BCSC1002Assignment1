@@ -14,31 +14,38 @@ public class Book {
     private String authorName;
     private String isbnNumber;
 
+    //Constructor
+    public Book() {
+        this.bookName = getBookName();
+        this.authorName = getAuthorName();
+        this.isbnNumber = getIsbnNumber();
+    }
+
     //getter and setter
-    public String getBookName(){
+    public String getBookName() {
         return bookName;
     }
-    public void setBookName(){
+
+    public void setBookName() {
         this.bookName = bookName;
     }
-    public String getAuthorName(){
+
+    public String getAuthorName() {
         return authorName;
     }
-    public void setAuthorName(){
+
+    public void setAuthorName() {
         this.authorName = authorName;
     }
-    public String getIsbnNumber(){
+
+    public String getIsbnNumber() {
         return isbnNumber;
     }
-    public void setIsbnNumber(){
+
+    public void setIsbnNumber() {
         this.isbnNumber = isbnNumber;
     }
-    //Constructor
-    public Book(String bookName,String authorName,String isbnNumber) {
-        this.bookName = "A Brief History Of Time";
-        this.authorName = "Stephan Hawkings";
-        this.isbnNumber = "23434WA34IJ8";
-    }
+
     //toString() method
     @Override
     public String toString() {
@@ -48,6 +55,7 @@ public class Book {
                 ", isbnNumber='" + isbnNumber + '\'' +
                 '}';
     }
+
     //equals() and hashCode() method
     @Override
     public boolean equals(Object o) {
